@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2023 at 07:16 AM
+-- Generation Time: Jan 14, 2023 at 03:10 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -34,22 +34,6 @@ CREATE TABLE `messages` (
   `msg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `messages`
---
-
-INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
-(1, 1341145654, 971932762, 'hi'),
-(2, 1341145654, 971932762, 'hello'),
-(3, 971932762, 1341145654, 'hello'),
-(4, 1341145654, 971932762, 'k6'),
-(5, 1341145654, 971932762, 'humm'),
-(6, 971932762, 1341145654, 'hawa xa yar'),
-(7, 971932762, 1341145654, 'timro'),
-(8, 971932762, 1341145654, 'oee'),
-(9, 1341145654, 971932762, 'humm'),
-(10, 1341145654, 971932762, 'hii bro');
-
 -- --------------------------------------------------------
 
 --
@@ -66,14 +50,6 @@ CREATE TABLE `users` (
   `img` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
-(1, 971932762, 'anish', 'bhattarai', 'anish@gmail.com', '7f266025dc45f2e14b2415f475cce468', '1672151566hacker-gif-11.png', 'Offline now'),
-(2, 1341145654, 'Nikesh', 'uprety', 'nikesh@gmail.com', '7f266025dc45f2e14b2415f475cce468', '16721531552nd.jpg', 'Offline now');
 
 --
 -- Indexes for dumped tables
